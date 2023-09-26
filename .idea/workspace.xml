@@ -5,19 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b12d7eb-0262-4ad9-9ed8-84326afdf4b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clothing_store/Cust_Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clothing_store/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clothing_store/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clothing_store/LoginModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clothing_store/LoginView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clothing_store/SignUpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clothing_store/SignUpModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clothing_store/SignUpView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clothing_store/Storefront.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clothing_store/Prod_Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clothing_store/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clothing_store/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clothing_store/ProductModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clothing_store/ProductView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clothing_store/SessionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clothing_store/ShoppingCartData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clothing_store/ShoppingCartWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_Store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_Store.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clothing_store/Welcome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clothing_store/Welcome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clothing_store/Cust_Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clothing_store/Cust_Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clothing_store/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clothing_store/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clothing_store/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clothing_store/LoginView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clothing_store/SignUpView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clothing_store/SignUpView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clothing_store/Storefront.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clothing_store/Storefront.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +41,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2UCZZ4BryBkX1VVT34fMtB4IVTl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,11 +57,24 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/rosha/IdeaProjects/abist242sp23Team2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rosha\Downloads\Clothing_Store\src\clothing_store" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,6 +83,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692445576789</updated>
+      <workItem from="1693434019567" duration="195000" />
+      <workItem from="1695652927256" duration="33334000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1692445890047</created>
@@ -71,37 +93,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692445890047</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1692450072754</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692450072754</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/clothing_store/Cust_Data.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/clothing_store/Cust_Data.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/clothing_store/Cust_Data.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/clothing_store/Cust_Data.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

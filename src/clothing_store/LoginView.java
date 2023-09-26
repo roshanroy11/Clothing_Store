@@ -64,11 +64,17 @@ public class LoginView extends JFrame {
         loginCustomerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                SessionManager sessionManager = new SessionManager();
+
+                int customerID = Integer.parseInt(customer_ID.getText());
+                sessionManager.setLoggedInCustomerId(customerID);
+
                 dispose();
-//                ProductModel model = new ProductModel();
-//                ProductView view = new ProductView(model);
-//                ProductController controller = new ProductController(model, view);
-//                view.setVisible(true);
+
+                ProductModel model = new ProductModel();
+                ProductView view = new ProductView(model);
+                ProductController controller = new ProductController(model, view);
+                view.setVisible(true);
             }
         });
     }
@@ -97,12 +103,12 @@ public class LoginView extends JFrame {
 
     public int getCustomerAction(){return Integer.parseInt(customer_ID.getText());}
 
-    public Customer loginCustomerAction() {
-        int cus_id = Integer.parseInt(customer_ID.getText());
-        String f_name = first_Name.getText();
-        String l_name = last_Name.getText();
-        String email = Email.getText();
-        String p_number = phone_Number.getText();
-        return new Customer(cus_id, f_name, l_name, email, p_number);
-    }
+//    public Customer loginCustomerAction() {
+//        int cus_id = Integer.parseInt(customer_ID.getText());
+//        String f_name = first_Name.getText();
+//        String l_name = last_Name.getText();
+//        String email = Email.getText();
+//        String p_number = phone_Number.getText();
+//        return new Customer(cus_id, f_name, l_name, email, p_number);
+//    }
 }

@@ -31,23 +31,7 @@ public class Cust_Data {
     }
 
 
-    // Read All SQL
-    public void readAllSQL() {
-        ArrayList<Customer> cust = new ArrayList<Customer>();
-        try {
-            ResultSet rs = get_connection().executeQuery("select * from Customer");
 
-            while (rs.next()) {
-                Customer cus = new Customer(rs.getInt("CustomerId"),rs.getString("first_Name"), rs.getString("last_Name"),
-                        rs.getString("Email"), rs.getString("phone_Number"));
-
-                cust.add(cus);
-            }
-
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-    }
 
     // Read by ID
     public Customer readByCustomerIdSQL(int id){
@@ -86,10 +70,24 @@ public class Cust_Data {
         return sId;
     }
 
+    public String getStateCodeByStateID(int stateId) {
+        String stateCode = null;
+        try {
+            ResultSet rs = get_connection().executeQuery("SELECT state_code FROM State WHERE state_id = " + stateId);
+
+            while (rs.next()) {
+                stateCode = rs.getString("state_code");
+            }
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return stateCode;
+    }
+
     public static Customer createCustomerSQL(Customer cus){
 
         try {
-            // Here, "Bike Store" is the database name, "root" is the username and "password" is the password
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/UsedClothStore", "root", "roshan11");
             Statement stmt = con.createStatement();
@@ -113,4 +111,23 @@ public class Cust_Data {
 
         return cus;
     }
+
+    // Read ALL SQL
+    //    public void readAllSQL() {
+//        ArrayList<Customer> cust = new ArrayList<Customer>();
+//        try {
+//            ResultSet rs = get_connection().executeQuery("select * from Customer");
+//
+//            while (rs.next()) {
+//                Customer cus = new Customer(rs.getInt("CustomerId"),rs.getString("first_Name"), rs.getString("last_Name"),
+//                        rs.getString("Email"), rs.getString("phone_Number"));
+//
+//                cust.add(cus);
+//            }
+//
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }
+//    }
+
 }

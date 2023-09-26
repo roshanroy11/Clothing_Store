@@ -7,5 +7,4 @@ public class Storefront {
         welcome.setVisible(true);
         System.out.println();
     }
-
 }

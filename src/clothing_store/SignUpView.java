@@ -102,7 +102,6 @@ public class SignUpView extends JFrame {
     }
     //    public int getCustomerAction(){return Integer.parseInt(customer_ID.getText());}
     public Customer addCustomerAction() {
-        //int cus_id = Integer.parseInt(customer_ID.getText());
         String f_name = first_Name.getText();
         String l_name = last_Name.getText();
         String email = Email.getText();

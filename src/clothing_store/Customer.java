@@ -9,14 +9,7 @@ public class Customer {
     private String payment;
     private String state;
 
-//    public Customer(int id, String firstName, String lastName, String email, String phoneNumber, String payment) {
-//        this.id = id;
-//        this.firstName = firstName;
-//        this.lastName = lastName;
-//        this.email = email;
-//        this.phoneNumber = phoneNumber;
-//        this.payment = payment;
-//    }
+
     public Customer(int id, String firstName, String lastName, String email, String phoneNumber) {
         this.id = id;
         this.firstName = firstName;
